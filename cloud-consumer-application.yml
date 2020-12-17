@@ -22,3 +22,10 @@ hystrix:
             timeoutInMilliseconds: 4000 #断路器超时时间，默认1000ms
 member:
   username: abc
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: '*'
